@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ultimate Beneficial Owner">
+    <meta name="description" content="UBO">
+    <meta name="description" content="Ownership Structure">
+    <meta name="description" content="Ownership Structure calculation">
+    <meta name="description" content="IBO">
+    <meta name="description" content="Intermediary Beneficial Owner">
+    <meta name="description" content="Intermediate Beneficial Owner">
+    <title>Ultimate Beneficial Owner</title>
+    <link rel="stylesheet" href="6_UBO.css">
+    <!-- Google fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik+Burned&display=swap" rel="stylesheet">
+    <!-- Google fonts end -->
+</head>
+<body>
+    <div class="navigationbar">
+
+        <h1>HOW I LEARNT</h1>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></label>
+        
+    <div class="rightside">
+        <ul>
+            <li><a href="#">AML/KYC</a>   
+                    <ul class="sidebar">
+                        <li><a href="2_kyc.html" target="_blank">KYC</a></li>
+                        <li><a href="4_aml.html" target="_blank">AML</a></li>
+                        <li><a href="3_Screening.html" target="_blank">Screening</a></li>
+                        <li><a href="5_tm.html" target="_blank">TM</a></li>
+                        <li><a href="6_UBO.html" target="_blank">UBO</a></li>
+                        <li><a href="7_SAR.html" target="_blank">SAR</a></li>
+                        <li><a href="9_CTR.html" target="_blank">CTR</a></li>
+                        <li><a href="10_Sanction.html" target="_blank">Sanctions</a></li>
+                    </ul>
+            </li>
+            <li><a href="#">Entity Types</a>
+                    <ul class="sidebar1">
+                        <li><a href="Entity Types/1_Entity_types.html" target="_blank">All</a></li>
+                        <li><a href="Entity Types/2_Pvt_Ltd.html" target="_blank">Private</a></li>
+                        <li><a href="Entity Types/3_Public.html" target="_blank">Public</a></li>
+                        <li><a href="Entity Types/4_LLP.html" target="_blank">LLP</a></li>
+                        <li><a href="Entity Types/5_LP.html" target="_blank">LP</a></li>
+                        <li><a href="Entity Types/6_GP.html" target="_blank">GP</a></li>
+                        <li><a href="Entity Types/7_Trust.html" target="_blank">Trust</a></li>
+                        <li><a href="Entity Types/8_Fund.html" target="_blank">Funds</a></li>
+                    </ul>
+            </li>
+            <li><a href="#">Other</a>
+                    <ul class="sidebar2">
+                        <li><a href="15_Links.html" target="_blank">Links</a></li>
+                        <li><a href="Organizations/1_FATF.html" target="_blank">FATF</a></li>
+                        <li><a href="Organizations/2_OFAC.html" target="_blank">OFAC</a></li>
+                        <li><a href="Organizations/3_FATCA.html" target="_blank">FATCA</a></li>
+                        <li><a href="Organizations/4_BSA.html" target="_blank">BSA</a></li>
+                        <li><a href="Organizations/5_Patriot.html" target="_blank">USA PATRIOT Act</a></li>
+                        <li><a href="Organizations/6_FinCen.html" target="_blank">FinCEN</a></li>
+                    </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div id="maincontent">
+    <div id="leftcontent">
+    <h1><b><u>Ultimate Beneficial Owner:</u></b></h1>
+    <br>
+    <h3>Introduction:</h3>
+    <br>
+    <p>Ultimate Beneficial Owner (UBO) refers to the natural person who ultimately owns or controls a legal entity. A UBO or Ultimate Beneficial Owner is the person that is the ultimate beneficiary when an institution initiates a transaction. To designate an individual as the Ultimate Beneficial Owner (UBO), they must possess a specific percentage of ownership in an entity, either through shares or rights. The calculation of this percentage is contingent upon the risk rating assigned to the company. Typically, the company adheres to the following approach:</p>
+    <br>
+    <table id="riskTable" class="tablefirst tables">
+        <tr>
+            <th>Risk Rating</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>Low</td>
+            <td>25% or more</td>
+        </tr>
+        <tr>
+            <td>Medium</td>
+            <td>25% or more</td>
+        </tr>
+        <tr>
+            <td>High</td>
+            <td>10% or more</td>
+        </tr>
+    </table>
+<br>
+    <h3>How to calculate ownership structure:</h3>
+    <br>
+    <p>Identifying the ultimate beneficial owner is crucial for various reasons, including transparency, preventing money laundering, and ensuring compliance with regulations. The process of determining the ultimate beneficial owner may involve investigating and disclosing the ownership structure of a company or other legal entity. It is an essential part of Know Your Customer (KYC) and Anti-Money Laundering (AML) compliance efforts.</p>
+    <p>Most of the times ownership structure will be simple, like the one shown below:</p>
+    <br>
+    <img id="firstone" src="Images/No Layer Ownership.png" width="230px">
+    <table class="table1 tables">
+        <tr>
+            <th>Risk Type</th>
+            <th>UBO</th>
+            <th>% of Ownership</th>
+            <th>Reason</th>
+        </tr>
+        <tr>
+            <td>Low/Medium</td>
+            <td>1. Mr. Mobile</td>
+            <td>100%</td>
+            <td>25% or more Ownership in shares</td>
+        <tr>
+            <td>High</td>
+            <td>1. Mr. Mobile</td>
+            <td>100%</td>
+            <td>10% or more Ownership in shares</td>
+        </tr>
+    </table>
+    
+    <br>
+    <p><b><i>2 UBO (Example 2):</i></b></p>
+
+    <img id="secondone" src="Images/50 percent owner.png" width="500px">
+    <table class="table2 tables">
+        <tr>
+            <th>Risk Type</th>
+            <th>UBO</th>
+            <th>% of Ownership</th>
+            <th>Reason</th>
+        </tr>
+        <tr>
+            <td>Low/Medium</td>
+            <td>1. Mr. Mobile <br> 2. Ms. Laptop</td>
+            <td>50% <br>50%</td>
+            <td>25% or more Ownership in shares</td>
+        <tr>
+            <td>High</td>
+            <td>1. Mr. Mobile <br> 2. Ms. Laptop</td>
+            <td>50% <br>50%</td>
+            <td>10% or more Ownership in shares</td>
+        </tr>
+    </table>
+    
+    <br>
+    <p><b><i>Multiple UBOs (Example 3):</i></b></p>
+    <img id="thirdone" src="Images/25 percent owner.png" width="700px">
+    <table class="table3 tables">
+        <tr>
+            <th>Risk Type</th>
+            <th>UBO</th>
+            <th>% of Ownership</th>
+        </tr>
+        <tr>
+            <td>Low/Medium <br> (25% or more)</td>
+            <td>1. Mr. Mobile <br> 2. Ms. Bottle</td>
+            <td>30% <br>35%</td>
+        <tr>
+            <td>High <br>(10% or more)</td>
+            <td>1. Mr. Mobile <br> 2. Ms. Laptop <br>3. Ms. Bottle <br>4. Mr. Glass</td>
+            <td>30% <br>20% <br>35% <br>15%</td>
+        </tr>
+    </table>
+    <br>
+    <h3>Intermediary Beneficial Owners (IBOs)</h3>
+    <p>Intermediary Beneficial Owners (IBOs) are legal entities that possess shares in another company. IBOs act as intermediaries between a company and its ultimate beneficial owner(s), unless the entity is a listed entity or a government entity. In cases where either the IBO or the company is listed on stock exchanges or is a government entity, most financial institutions typically do not delve further, as such entities are subject to regulatory oversight.</p>
+    <br>
+    <p><b><i>1 Layer Ownership (IBO) (Example 4):</i></b></p>
+    
+        <img id="fourthone" src="Images/1 Layer Ownership.png" width="180px">
+    <table class="table4 tables">
+        <tr>
+            <th>Risk Type</th>
+            <th>UBO</th>
+            <th>% of Ownership</th>
+            <th>IBO</th>
+            <th>% of Ownership</th>
+        </tr>
+        <tr>
+            <td>Low/Medium <br>(25% or more)</td>
+            <td>Mr. Mobile</td>
+            <td>100%</td>
+            <td>Company B</td>
+            <td>100%</td>
+        <tr>
+            <td>High <br>(10% or more)</td>
+            <td>Mr. Mobile</td>
+            <td>100%</td>
+            <td>Company B</td>
+            <td>100%</td>
+        </tr>
+    </table>
+    
+    <br>
+    <p><b><i>1 Layer (IBO) with 2 UBOs (Example 5):</i></b></p>
+    
+            <img id="fifthone" src="Images/1 Layer 50 percent Ownership.png" width="450px">
+    <table class="table5 tables">
+        <tr>
+            <th>Risk Type</th>
+            <th>UBO</th>
+            <th>% of Ownership</th>
+            <th>IBO</th>
+            <th>% of Ownership</th>
+        </tr>
+        <tr>
+            <td>Low/Medium <br>(25% or more)</td>
+            <td>1. Mr. Mobile <br>2. Ms. Laptop</td>
+            <td>50% <br>50%</td>
+            <td>Company B</td>
+            <td>100%</td>
+        <tr>
+            <td>High <br>(10% or more)</td>
+            <td>1. Mr. Mobile <br>2. Ms. Laptop</td>
+            <td>50% <br>50%</td>
+            <td>Company B</td>
+            <td>100%</td>
+        </tr>
+    </table>
+    <br>
+    <p><b><i>2 Layer Ownership (IBO) (Example 6):</i></b></p>
+    
+        <img id="sixthone" src="Images/2 Layer Ownership.png" width="500px">
+    <table class="table6 tables">
+        <tr>
+            <th>Risk Type</th>
+            <th>UBO</th>
+            <th>% of Ownership</th>
+            <th>IBO</th>
+            <th>% of Ownership</th>
+        </tr>
+        <tr>
+            <td>Low/Medium <br>(25% or more)</td>
+            <td>1. Mr. Mobile <br>2. Ms. Laptop</td>
+            <td>50% <br>50%</td>
+            <td>1. Company B <br>2. Company C</td>
+            <td>50% <br>50%</td>
+        <tr>
+            <td>High <br>(10% or more)</td>
+            <td>1. Mr. Mobile <br>2. Ms. Laptop</td>
+            <td>50% <br>50%</td>
+            <td>1. Company B <br>2. Company C</td>
+            <td>50% <br>50%</td>
+        </tr>
+    </table>
+    
+    <br>
+    <p><b><i>Multi Layer Ownership (IBO) (Example 7):</i></b></p>
+    
+        <img id="seventhone" src="Images/Multi Layer Ownership.png" width="650px">
+    <table class="table7 tables">
+        <tr>
+            <th>Risk Type</th>
+            <th>UBO</th>
+            <th>% of Ownership</th>
+            <th>IBO</th>
+            <th>% of Ownership</th>
+        </tr>
+        <tr>
+            <td>Low/Medium <br>(25% or more)</td>
+            <td>1. Mr. Mobile <br>2. Mr. Glass</td>
+            <td>27% <br>32%</td>
+            <td>1. Company B <br>2. Company E</td>
+            <td>27% <br>32%</td>
+        <tr>
+            <td>High <br>(10% or more)</td>
+            <td>1. Mr. Mobile <br>2. Ms. Laptop <br>3. Ms. Bottle <br>4. Mr. Glass</td>
+            <td>27% <br>23% <br>18% <br>32%</td>
+            <td>1. Company B <br>2. Company C <br>3. Company D <br>4. Company E</td>
+            <td>27% <br>23% <br>18% <br>32%</td>
+        </tr>
+    </table>
+    
+    <br>
+    <p><b><i>Complex Ownership Structure (Simple Version)</i></b></p>
+    <img id="eightone" src="Images/Complex simple ownership.png" width="800px">
+    <table class="table8 tables">
+        <tr>
+            <th>Risk Type</th>
+            <th>UBO</th>
+            <th>% of Ownership</th>
+            <th>IBO</th>
+            <th>% of Ownership</th>
+        </tr>
+        <tr>
+            <td>Low/Medium <br>(25% or more)</td>
+            <td>1. Mr. Mobile</td>
+            <td>25.65%</td>
+            <td>1. Company B <br>2. Company C <br>3. Company H</td>
+            <td>27% <br>22.5% <br>6.75%</td>
+        <tr>
+            <td>High <br>(10% or more)</td>
+            <td>1. Mr. Mobile <br>2. Mr. Button <br>3. Ms. Bottle <br>4. Mr. Charger</td>
+            <td>25.65% <br>17.38% <br>12.5% <br>11.4%</td>
+            <td>1. Company B <br>2. Company C <br>3. Company D <br>4. Company E <br> 5. Company G <br> 6. Company H <br>7. Company I <br>8. Company K <br>9. Company L <br>10. Company M</td>
+            <td>B - 27% <br>C - 22.5% <br>D - 38% <br>E - 12.5% <br>G - 15.75% <br>H - 6.75% <br>I - 11.4% <br>K - 19% <br>L - 9.5% <br>M - 7.88%</td>
+        </tr>
+    </table>
+    
+    <br>
+    <p>How to arrive at this ownership structure:</p>
+    <br>
+    
+    <h4>IBO Details:</h4>
+    <table id="IBOside" class="table9 tables">
+        <tr>
+            <th>Name</th>
+            <th>Calculation of Ownership</th>
+        </tr>
+        <tr>
+            <td>Company B</td>
+            <td>Direct Ownership of 27%</td>
+        </tr>
+        <tr>
+            <td>Company C</td>
+            <td>Direct Ownership of 22.5%</td>
+        </tr>
+        <tr>
+            <td>Company D</td>
+            <td>Direct Ownership of 38%</td>
+        </tr>
+        <tr>
+            <td>Company E</td>
+            <td>Direct Ownership of 12.5%</td>
+        </tr>
+        <tr>
+            <td>Company F</td>
+            <td>30% share in 27% of Company B - 8.1%</td>
+        </tr>
+        <tr>
+            <td>Company G</td>
+            <td>70% share in 22.5% of Company C - 15.75%</td>
+        </tr>
+        <tr>
+            <td>Company H</td>
+            <td>30% share in 22.5% of Company C - 6.75%</td>
+        </tr>
+        <tr>
+            <td>Company I</td>
+            <td>30% share in 38% of Company D - 11.4%</td>
+        </tr>
+        <tr>
+            <td>Company J</td>
+            <td>20% share in 38% of Company D - 7.6%</td>
+        </tr>
+        <tr>
+            <td>Company K</td>
+            <td>50% share in 38% of Company D - 19%</td>
+        </tr>
+        <tr>
+            <td>Company L</td>
+            <td>50% share in 19% of Company D - 9.5%</td>
+        </tr>
+        <tr>
+            <td>Company M</td>
+            <td>50% share in 15.75% of Company G - 7.88%</td>
+        </tr>
+
+
+    </table>
+    <br>
+    <h4>UBO Details</h4>
+    <table id="UBOside" class="table10 tables">
+        <tr>
+            <th>Name</th>
+            <th>Calculation of Ownership</th>
+        </tr>
+        <tr>
+            <td>Ms Laptop</td>
+            <td>100% Ownership of 8.1% of Company F - 8.1%</td>
+        </tr>
+        <tr>
+            <td>Mr. Mobile</td>
+            <td>70% Ownership of 27% of Company B - 18.9% <br>
+                100% Ownership of 6.75% of Company H - 6.75% <br>
+                Total - 25.65%</td>
+        </tr>
+        <tr>
+            <td>Ms. Plug</td>
+            <td>50% Ownership of 15.75% of Company G - 7.88%</td>
+        </tr>
+        <tr>
+            <td>Mr. Charger</td>
+            <td>100% Ownership of 11.4% of Company I - 11.4%</td>
+        </tr>
+        <tr>
+            <td>Ms. Wire</td>
+            <td>100% Ownership of 7.6% of Company J - 7.6%</td>
+        </tr>
+        <tr>
+            <td>Ms. Bottle</td>
+            <td>100% Ownership of 12.5% of Company E - 12.5%</td>
+        </tr>
+        <tr>
+            <td>Mr. Glass</td>
+            <td>25% Ownership of 19% of Company K - 4.75%</td>
+        </tr>
+        <tr>
+            <td>Mr. Current</td>
+            <td>25% Ownership of 19% of Company K - 4.75%</td>
+        </tr>
+        <tr>
+            <td>Mr. Button</td>
+            <td>100% Ownership of 9.5% of Company L - 9.5% <br>
+                100% Ownership of 7.88% of Company M - 7.88% <br>
+                Total - 17.38%</td>
+        </tr>
+        </table>
+
+    <br>
+    
+
+
+
+
+</div>
+<div id="rightcontent">
+    <h3>Related Topics</h3>
+    <ul>
+        <li><a href="2_OFAC.html">OFAC</a></li>
+        <li><a href="3_FATCA.html">FATCA</a></li>
+        <li><a href="4_BSA.html">BSA</a></li>
+        <li><a href="5_Patriot.html">Patriot Act</a></li>
+        <li><a href="6_FinCen.html">FinCen</a></li>
+        <li><a href="/4_aml.html">AML</a></li>
+        <li><a href="2_Pvt_Ltd.html">Pvt Ltd</a></li>
+        <li><a href="3_Public.html">Public Listed</a></li>
+        <li><a href="4_LLP.html">LLP</a></li>
+        <li><a href="/3_Screening.html">Screening</a></li>
+    </ul>
+</div>
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <footer><p><b><i>For any suggestion on new topics or adding detailed explanation of existing topics, please DM on</i></b></p>
+        <h3><a href="https://www.linkedin.com/in/mohammed-taha-km-31513873/">LinkedIn</a></h3></footer>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(231, 251, 245);
+    min-height: 100vh; width: 100%;
+}
+
+h1, .rightside ul li a {
+    font-family: 'Rubik Burned', system-ui;
+}
+
+h1 {
+    margin-left: -50px;
+    font-size: 2.5rem;
+}
+
+#leftcontent h1 {
+    font-size: 1.6rem;
+}
+
+.rightside {
+    margin-right: -50px;
+    font-size: 1.1rem;
+}
+
+.navigationbar {
+    position: fixed; top: 0; left: 0; right: 0;
+    display: flex; align-items: center; justify-content: space-between;
+    background-color: aquamarine;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0px 7%;
+    z-index: 100; 
+}
+
+.rightside ul {
+    list-style: none;
+}
+
+.rightside ul li {
+    position: relative;
+    float: left;
+}
+
+.rightside ul li a {
+    color: black;
+    font-weight: 600;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.rightside ul li a:hover {
+    background-color: #fff;
+    color: rgb(47, 134, 103);
+    border-radius: 3px;
+}
+
+.rightside ul li ul {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: aquamarine;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: none;
+}
+
+.rightside ul li:hover ul {
+    display: initial;
+}
+
+.navigationbar label, #menu-bar {
+    display: none;
+}
+
+.navigationbar label {
+    cursor: pointer;
+}
+
+.rightside ul li ul li {
+    width: 100%;
+}
+
+#hide {
+    display: none;
+    position: relative;
+    left: 50px;
+}
+
+
+
+
+
+
+
+
+
+#maincontent {
+    display: flex; justify-content: space-between;
+    position: relative; top: 70px;
+    left: 10px;
+    text-align: justify;    
+}
+
+#leftcontent {
+    width: 80%;
+}
+
+#leftcontent ul {
+    margin-left: 25px;
+    line-height: 180%;
+}
+
+.bold {
+    font-style: italic; font-weight: bolder;
+}
+
+#rightcontent {
+    width: 15%;
+    text-align: center;
+    position: relative; top: 20px;
+    border: 1px solid black;
+    height: 83vh;
+}
+
+#rightcontent ul {
+    list-style: none;
+}
+
+#rightcontent ul li {
+    margin: 15px;
+    padding: 10px 0;
+}
+
+#rightcontent ul li a {
+    text-decoration: none;
+}
+
+#rightcontent ul li a:visited {
+    color: rgb(2, 128, 2);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+table {
+    border-collapse: collapse;
+    margin: 10px;
+    width: 80%;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.sNo {
+    text-align: center;
+}
+
+th {
+    background-color: rgb(120, 215, 120);
+    font-size: 1.1rem;
+}
+
+td {
+    font-size: 1rem;
+}
+#MainHeading {
+    margin-left: 10px;
+    width: 70%;
+}
+
+a:hover {
+    color: rgb(20, 160, 113);
+}
+a:visited {
+    color: none;
+}
+
+
+
+
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    h1 {
+        font-size: 2rem;
+    }
+    #leftcontent h1 {
+        font-size: 1.5rem;
+    }
+    .rightside {
+        font-size: 1rem;
+    }
+    #hide {
+        position: absolute;
+        left: 290px;
+    }
+    th {
+        font-size: 1.1rem;
+    }
+    td {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    #leftcontent h1 {
+        font-size: 1.4rem;
+    }
+    .rightside {
+        font-size: 0.9rem;
+    }
+    #hide {
+        position: absolute;
+        left: 240px;
+    }
+    th {
+        font-size: 1rem;
+    }
+    td {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 700px) {
+    h1 {
+        font-size: 1.3rem;
+        margin-left: -20px;
+    }
+    #leftcontent h1 {
+        font-size: 1.3rem;
+    }
+    .rightside {
+        font-size: 0.8rem;
+    }
+    #hide {
+        position: absolute;
+        left: 220px;
+    }
+    th {
+        font-size: 0.9rem;
+    }
+    td {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .navigationbar label {
+        display: initial;
+    }
+    .rightside {
+        position: absolute; top: 100%; left: 50%; right: 0;
+        background-color: aquamarine;
+        display: none;
+    }
+    .rightside ul li {
+        width: 100%;
+    }
+    .rightside ul li ul {
+        position: absolute; left: -50%; top: 0;
+        width: 50%;
+    }
+    h1 {
+        font-size: 1.5rem;
+        margin-left: -20px;
+    }
+    #leftcontent h1 {
+        font-size: 1.2rem;
+    }
+    #menu-bar:checked ~ .rightside {
+        display: initial;
+    }
+    #hide {
+        position: absolute;
+        left: 310px;
+    }
+    #maincontent {
+        left: 3px;
+    }
+    #rightcontent {
+        font-size: 0.7rem;
+        top: 58px;
+        height: 50vh;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 0.9rem;
+    }
+    #rightcontent ul li {
+        margin: 0 0.5px;
+    }
+    th {
+        font-size: 0.9rem;
+    }
+    td {
+        font-size: 0.8rem;
+    }
+}

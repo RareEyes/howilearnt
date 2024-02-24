@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Burned', system-ui;
+}
+
+body {
+    background-color: #424d63;
+    min-height: 100vh; width: 100%;
+}
+
+h1 {
+    margin-left: -50px;
+    font-size: 2.5rem;
+}
+
+
+.rightside {
+    margin-right: -50px;
+    font-size: 1.1rem;
+}
+
+.navigationbar {
+    position: fixed; top: 0; left: 0; right: 0;
+    display: flex; align-items: center; justify-content: space-between;
+    background-color: aquamarine;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0px 7%;
+    z-index: 100; 
+}
+
+.rightside ul {
+    list-style: none;
+}
+
+.rightside ul li {
+    position: relative;
+    float: left;
+}
+
+.rightside ul li a {
+    color: black;
+    font-weight: 600;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.rightside ul li a:hover {
+    background-color: #fff;
+    color: rgb(47, 134, 103);
+    border-radius: 3px;
+}
+
+.rightside ul li ul {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: aquamarine;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: none;
+}
+
+.rightside ul li:hover ul {
+    display: initial;
+}
+
+.navigationbar label, #menu-bar {
+    display: none;
+}
+
+.navigationbar label {
+    cursor: pointer;
+}
+
+.rightside ul li ul li {
+    width: 100%;
+}
+
+#hide {
+    display: none;
+    position: relative;
+    left: 50px;
+}
+
+
+
+.allquotes {
+    position: relative;
+    top: 50px;
+    width: 80%;
+    text-align: justify;
+}
+
+.allquotes p {
+    font-family: 'caveat';
+    font-size: 20px;
+}
+
+.quote {
+    background-color: rgba(253, 253, 225,0.7);
+    animation-name: move;
+    position: relative;
+    z-index: -1;
+    top: 20px;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    100% {
+        left:10%;
+    }
+}
+
+.firstquote {
+    animation-delay: 200ms;
+}
+
+.secondquote {
+    animation-delay: 600ms;
+}
+
+.thirdquote {
+    animation-delay: 1000ms;
+}
+
+.fourthquote {
+    animation-delay: 1400ms;
+}
+
+.fifthquote {
+    animation-delay: 1800ms;
+}
+
+.sixthquote {
+    animation-delay: 2200ms;
+}
+
+.seventhquote {
+    animation-delay: 2600ms;
+}
+
+.eightquote {
+    animation-delay: 3000ms;
+}
+
+.ninthquote {
+    animation-delay: 3400ms;
+}
+
+.tenthquote {
+    animation-delay: 3800ms;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#lastchild {
+    display: none;
+}
+
+
+
+
+
+
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .rightside {
+        font-size: 1rem;
+    }
+    #hide {
+        position: absolute;
+        left: 290px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    .rightside {
+        font-size: 0.9rem;
+    }
+    #hide {
+        position: absolute;
+        left: 240px;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 700px) {
+    h1 {
+        font-size: 1.3rem;
+        margin-left: -20px;
+    }
+    .rightside {
+        font-size: 0.8rem;
+    }
+    #hide {
+        position: absolute;
+        left: 220px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+    .navigationbar label {
+        display: initial;
+    }
+    .rightside {
+        position: absolute; top: 100%; left: 50%; right: 0;
+        background-color: aquamarine;
+        display: none;
+    }
+    .rightside ul li {
+        width: 100%;
+    }
+    .rightside ul li ul {
+        position: absolute; left: -50%; top: 0;
+        width: 50%;
+    }
+    h1 {
+        font-size: 1.5rem;
+        margin-left: -20px;
+    }
+    #menu-bar:checked ~ .rightside {
+        display: initial;
+    }  
+    #hide {
+        position: absolute;
+        left: 310px;
+    }
+    .sixthquote, .seventhquote, .eightquote, .ninthquote, .tenthquote {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
