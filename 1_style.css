@@ -248,7 +248,20 @@ footer {
     .sixthquote, .seventhquote, .eightquote, .ninthquote, .tenthquote {
         display: none;
     }
-}
+    @media (max-width: 450px) {
+    .quote p {
+        font-size: 0.9rem;
+    }
+    footer p {
+        font-size: 0.6rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    footer a {
+        font-size: 0.8rem;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+    }
 
 
 
