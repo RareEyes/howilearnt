@@ -276,11 +276,11 @@ h1 {
     }
 }
 
-@media (min-width:390px) and (max-width:550px) {
+@media (max-width:550px) {
     #rightcontent {
         height: 60vh;
     }
     img {
-        width: 390px;
+        width: 420px;
     }
 } 
