@@ -129,11 +129,12 @@ h1 {
 }
 
 #rightcontent {
-    width: 15%;
+    width: 18%;
     text-align: center;
     position: relative; top: 20px;
     border: 1px solid black;
     height: 90vh;
+    margin-right: 2px;
 }
 
 #rightcontent ul {
@@ -275,7 +276,7 @@ h1 {
     #leftcontent ul li, #leftcontent ol li {
         font-size: 0.8rem;
     }
-    #leftcontent ul {
+    #leftcontent ul, #leftcontent ol {
         line-height: 150%;
     } 
 }
