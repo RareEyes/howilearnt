@@ -127,11 +127,12 @@ h1 {
 }
 
 #rightcontent {
-    width: 15%;
+    width: 18%;
     text-align: center;
     position: relative; top: 20px;
     border: 1px solid black;
     height: 83vh;
+    margin-right:2px;
 }
 
 #rightcontent ul {
@@ -383,7 +384,7 @@ th {
     #leftcontent ul {
         line-height: 150%;
     }
-    .table8 th, .table8 td, .table7 th, .table7 td {
+    .table8 th, .table8 td, .table7 th, .table7 td, .table6 th, .table6 td {
         font-size: 0.4rem;
     } 
 }
