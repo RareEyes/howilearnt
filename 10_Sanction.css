@@ -18,6 +18,11 @@ footer {
     text-align: center;
 }
 
+footer a, footer p {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
 h1 {
     margin-left: -50px;
     font-size: 2.5rem;
@@ -249,7 +254,7 @@ h1 {
     #rightcontent {
         font-size: 0.7rem;
         top: 58px;
-        height: 50vh;
+        height: 60vh;
     }
     h2 {
         font-size: 1.2rem;
@@ -262,37 +267,20 @@ h1 {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width:550px) {
+    footer a, footer p {
+        font-size: 0.8rem;
+    }
+    #leftcontent p {
+        font-size: 0.8rem;
+    }
+    #leftcontent ul li, #leftcontent ol li {
+        font-size: 0.8rem;
+    }
+    #leftcontent ul {
+        line-height: 150%;
+    }
+    .table8 th, .table8 td, .table7 th, .table7 td {
+        font-size: 0.4rem;
+    } 
+}
