@@ -17,6 +17,10 @@ h1, .rightside ul li a {
 footer {
     text-align: center;
 }
+footer a, footer p {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
 
 h1 {
     margin-left: -50px;
@@ -259,7 +263,7 @@ h1 {
     #rightcontent {
         font-size: 0.7rem;
         top: 58px;
-        height: 50vh;
+        height: 60vh;
     }
     h3 {
         font-size: 1rem;
@@ -270,16 +274,7 @@ h1 {
     }
 }
 
-@media (min-width:550px) and (max-width:650px) {
-    img {
-        width: 450px;
-    }
-}
-
 @media (max-width:550px) {
-    #rightcontent {
-        height: 60vh;
-    }
     img {
         width: 420px;
     }
