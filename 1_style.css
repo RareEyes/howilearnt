@@ -245,14 +245,12 @@ footer {
     #menu-bar:checked ~ .rightside {
         display: initial;
     }  
-    #hide {
-        position: absolute;
-        left: 310px;
-    }
     .sixthquote, .seventhquote, .eightquote, .ninthquote, .tenthquote {
         display: none;
     }
-    @media (max-width: 450px) {
+}
+
+@media (max-width: 450px) {
     .quote p {
         font-size: 0.9rem;
     }
@@ -262,20 +260,4 @@ footer {
     footer a {
         font-size: 0.8rem;
     }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
