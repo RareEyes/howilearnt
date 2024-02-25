@@ -383,6 +383,9 @@ th {
     #leftcontent ul {
         line-height: 150%;
     }
+    .table8 th, .table8 td {
+        font-size: 0.4rem;
+    }
 }
 
 
