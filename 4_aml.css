@@ -128,11 +128,12 @@ h1 {
 }
 
 #rightcontent {
-    width: 15%;
+    width: 18%;
     text-align: center;
     position: relative; top: 20px;
     border: 1px solid black;
     height: 83vh;
+    margin-right: 2px;
 }
 
 #rightcontent ul {
