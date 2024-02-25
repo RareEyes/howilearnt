@@ -134,11 +134,12 @@ h1 {
 }
 
 #rightcontent {
-    width: 15%;
+    width: 18%;
     text-align: center;
     position: relative; top: 20px;
     border: 1px solid black;
     height: 90vh;
+    margin-right: 2px;
 }
 
 #rightcontent ul {
@@ -247,7 +248,7 @@ h1 {
 
 @media (max-width: 650px) {
     img {
-        width: 450px;
+        width: 400px;
     }
     .navigationbar label {
         display: initial;
