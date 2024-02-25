@@ -14,6 +14,16 @@ h1, .rightside ul li a {
     font-family: 'Rubik Burned', system-ui;
 }
 
+
+footer {
+    text-align: center;
+}
+
+footer a, footer p {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
 h1 {
     margin-left: -50px;
     font-size: 2.5rem;
@@ -317,4 +327,19 @@ a:visited {
     td {
         font-size: 0.8rem;
     }
+}
+
+@media (max-width:550px) {
+    footer a, footer p {
+        font-size: 0.8rem;
+    }
+    #leftcontent p {
+        font-size: 0.8rem;
+    }
+    #leftcontent ul li, #leftcontent ol li {
+        font-size: 0.8rem;
+    }
+    #leftcontent ul {
+        line-height: 150%;
+    } 
 }
