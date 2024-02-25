@@ -287,4 +287,6 @@ h1 {
     #leftcontent ul li, #leftcontent ol li {
         font-size: 0.8rem;
     } 
+    #leftcontent ul {
+        line-height: 150%;
 } 
