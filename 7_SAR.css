@@ -24,8 +24,8 @@ footer a, footer p {
 }
 
 h1 {
-    margin-left: -50px;
-    font-size: 2.5rem;
+    margin-left: -40px;
+    font-size: 2.2rem;
 }
 
 #leftcontent h1 {
@@ -34,7 +34,7 @@ h1 {
 }
 
 .rightside {
-    margin-right: -50px;
+    margin-right: -40px;
     font-size: 1.1rem;
 }
 
@@ -249,8 +249,8 @@ h1 {
     }
     #rightcontent {
         font-size: 0.7rem;
-        top: 58px;
-        height: 60vh;
+        top: 30px;
+        height: 55vh;
     }
     h2 {
         font-size: 1.2rem;
