@@ -11,8 +11,8 @@ body {
 }
 
 h1 {
-    margin-left: -50px;
-    font-size: 2.5rem;
+    margin-left: -40px;
+    font-size: 2.2rem;
 }
 
 footer a, footer p {
@@ -21,7 +21,7 @@ footer a, footer p {
 }
 
 .rightside {
-    margin-right: -50px;
+    margin-right: -40px;
     font-size: 1.1rem;
 }
 
