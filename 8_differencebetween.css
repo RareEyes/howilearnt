@@ -170,7 +170,6 @@ h1 {
 table {
     border-collapse: collapse;
     margin: 20px;
-    width: 80%;
 }
 
 td, th {
@@ -186,7 +185,6 @@ th {
 
 h3 {
     text-align: center;
-    width: 80%;
 }
 
 
@@ -337,6 +335,6 @@ h3 {
         line-height: 150%;
     }
     th, td {
-        font-size: 0.4rem;
+        font-size: 0.6rem;
     } 
 }
