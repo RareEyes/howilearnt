@@ -10,7 +10,7 @@ body {
     min-height: 100vh; width: 100%;
 }
 
-h1, .rightside ul li a, footer {
+h1, .rightside ul li a {
     font-family: 'Rubik Burned', system-ui;
 }
 
@@ -24,8 +24,8 @@ footer a, footer p {
 }
 
 h1 {
-    margin-left: -50px;
-    font-size: 2.5rem;
+    margin-left: -40px;
+    font-size: 2.2rem;
 }
 
 #leftcontent h1 {
@@ -33,7 +33,7 @@ h1 {
     font-size: 1.6rem;
 }
 .rightside {
-    margin-right: -50px;
+    margin-right: -40px;
     font-size: 1.1rem;
 }
 
@@ -284,8 +284,8 @@ td {
     }
     #rightcontent {
         font-size: 0.7rem;
-        top: 58px;
-        height: 50vh;
+        top: 30px;
+        height: 55vh;
     }
     h2 {
         font-size: 1.2rem;
