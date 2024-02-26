@@ -191,10 +191,6 @@ th {
 td {
     font-size: 1rem;
 }
-#MainHeading {
-    margin-left: 10px;
-    width: 70%;
-}
 
 a:hover {
     color: rgb(20, 160, 113);
@@ -342,5 +338,14 @@ a:visited {
     }
     #leftcontent ul {
         line-height: 150%;
-    } 
+    }
+    th {
+        font-size: 0.6rem;
+        margin: 0;
+        padding: 5px;
+    }
+    td {
+        font-size: 0.5rem;
+        padding: 8px;
+    }
 }
